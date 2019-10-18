@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{%  block content %}
+    <h3><a href="/recent">VIEW</a> recent listings</h3>
+    <h3><a href="/all">VIEW</a> all listings</h3>
+    <h3><a href="/post">POST</a> a listing</h3>
+
+    <h3><form id="searchform" action="{% url 'searchresult' %}" method="get" accept-charset="utf-8">
+            <a href="/tosearch">SEARCH</a> keyword =
+      <input class="searchfield" id="searchbox" name="q" type="text" placeholder="Search">
+            <button class="searchbutton" type="submit">
+            SUBMIT
+            </button>
+    </form>
+</h3>
+
+<!--    <link rel = "stylesheet" href="first.html">xxx </link>-->
+
+{% endblock %}

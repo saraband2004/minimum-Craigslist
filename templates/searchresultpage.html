@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{%  block content %}
+    <h3>Search Results for <i>'{{ pppp.key }}':</i>
+    </h3>
+    {% for object in postxlist %}
+
+        <p><button onclick="window.location.href='/listing/{{  object.id }}'">VIEW</button>
+            <a href="{% url 'listing-detail' object.id %} ">{{object.caption}}</a>
+
+               ({{ object.date}})
+
+        </p>
+    {% endfor %}
+
+     <!--{% for p in pppp %} {{ p.name }}  {% endfor %}-->
+{% endblock %}

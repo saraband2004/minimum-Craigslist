@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{%  block content %}
+
+    <h3><form id="searchform" action="{% url 'searchresult' %}" method="get" accept-charset="utf-8">
+            SEARCH keyword =
+      <input class="searchfield" id="searchbox" name="q" type="text" placeholder="Search">
+            <button class="searchbutton" type="submit">
+            SUBMIT
+            </button>
+        </form>
+    </h3>
+
+        <h3><form id="searchform" action="{% url 'searchresult_caption' %}" method="get" accept-charset="utf-8">
+            SEARCH keyword =
+      <input class="searchfield" id="searchbox" name="q" type="text" placeholder="Search">
+            <button class="searchbutton" type="submit">
+            SUBMIT
+            </button>
+        in captions only </form>
+    </h3>
+
+    <!--{% for p in pppp %} {{ p.name }}  {% endfor %}-->
+{% endblock %}

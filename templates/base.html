@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>minimum Craigslist</title>
+    {% endif %}
+ <style>div.a {
+  word-wrap: break-word;
+
+}
+
+ p.a {
+  white-space: pre-wrap;
+
+}
+
+
+
+ </style>
+
+
+</head>
+<body style="background-color:#DFCAFF; font-family: Arial !important;" >
+
+
+<div class="a">
+<h1>minimum Craigslist</h1>
+<hr>
+    {% block content %} {% endblock content %}
+<br>
+<hr>
+    <p><sub>© Copyright 2019. All Rights Reserved.</sub></p>
+    <p><a href="/">Go back</a></p>
+</div>
+</body>
+</html>

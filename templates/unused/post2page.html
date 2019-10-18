@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{%  block content %}
+    <form method="POST">
+        <h3>Post a listing on this page</h3>
+        <div>
+            <label class="required">Title:</label>
+        </div>
+        <label class="required">Content:</label>
+        <div>
+                <textarea name="listing_texts" cols="66" rows="20" class="vLargeTextField"></textarea>
+        </div>
+        <button>SUBMIT LISTING</button>
+    </form>
+{% endblock %}
