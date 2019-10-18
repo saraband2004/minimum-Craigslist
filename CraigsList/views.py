@@ -6,16 +6,6 @@ from django.views.generic import ListView, DetailView, CreateView
 from django.urls import reverse, reverse_lazy
 from django.db.models import Q
 
-postxs=[
-    {
-        'name': 'ABC',
-        'time': 'Zebra'
-    },
-    {
-        'name': 'DEF',
-        'time': 'qChem'
-    }
-]
 
 
 
