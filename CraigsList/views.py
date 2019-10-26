@@ -10,8 +10,7 @@ from django.db.models import Q
 
 
 def tosearch(request):
-    contxext ={        'pppp': postxs     }
-    return render(request, 'searchpage.html', contxext)
+      return render(request, 'searchpage.html')
 
 
 def first(request):
